@@ -299,7 +299,7 @@ body {
 header
 --------------------------------------------- 
 */
-
+/*
 .background-header {
   background-color: #fff!important;
   height: 80px!important;
@@ -309,6 +309,7 @@ header
   right: 0px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
 }
+
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
@@ -322,6 +323,7 @@ header
 .background-header .nav li a.active {
   color: #ff685f!important;
 }
+*/
 
 .header-area {
   background-color: #fafafa;
