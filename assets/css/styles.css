@@ -1,0 +1,328 @@
+:root {
+  --cul-p: #d55140;
+  --bgcolor: #343a40;
+  /*--cul-p: #007AB3;*/
+  /*--cul-p: #4285F4;*/
+  --cul-p-0.7: rgba(230,67,53,0.7);
+}
+
+body {
+  background-color: var(--bgcolor);
+}
+
+/* bara de navigatie */
+
+#mainNav .navbar-brand {
+  color: var(--bs-white);
+  font-family: Helvetica,'Balsamiq Sans', sans-serif;
+}
+
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: var(--cul-p);
+}
+
+.fa.fa-bars {
+  color: var(--bs-white);
+  background-color: transparent;
+  font-size: 13px;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  right: 0;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: sans-serif, "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  border-radius: 10px;
+  border: 2px solid var(--bs-white) ;
+  background: rgba(0,0,0,0);
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: var(--cul-p);
+  background-color: rgba(0,0,0,0.1);
+}
+
+.intro-paragraph {
+  font-size: 16px;
+}
+
+.btn-circle {
+  border-radius: 40px;
+  /*width: 80px;*/
+  /*height: 80px;*/
+  color: white;
+  /*font-size: 45px;*/
+  background: rgba(255,255,255,0.2);
+  border: 3px solid var(--cul-p);
+}
+
+header .btn-circle {
+  width: 80px;
+  height: 80px;
+  font-size: 45px;
+}
+
+.col-sm-2.col-md-2.col-lg-2.offset-sm-10.offset-md-10.offset-lg-10 {
+}
+
+.btn-link:hover {
+  color: white;
+  border-color: white;
+  background: rgba(230,67,53,0.7);
+}
+
+.masthead {
+  /*background-image: url('header-bk-10.png');*/
+}
+
+header.masthead {
+  text-align: center;
+  color: white;
+  background-color: black;
+  background-image: url("../../assets/img/header.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  /*height: 900px;*/
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 900px;
+    /*background-color: rgba(0,0,0,0);*/
+  }
+}
+
+/* servicii */
+
+#services {
+  /*background: linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%);*/
+  background: linear-gradient(55deg, #fff 0%, #eee 51%, #ddd 85%);
+  padding-bottom: 20px;
+}
+
+#services .cul-ico {
+  color: var(--cul-p);
+}
+
+#services .serv-item:hover h2 {
+  color: var(--bs-blue);
+}
+
+/* despre */
+
+#about {
+  background: url("cl-20.svg") top / auto no-repeat;
+  padding-top: 100px;
+  background: linear-gradient(55deg, #fff 0%, #eee 51%, #ddd 85%);
+}
+
+.timeline > li .timeline-image {
+  background: url("../../assets/img/cl.svg") center / auto no-repeat, rgba(0,0,0,0.5);
+}
+
+.timeline > li .timeline-image h2 {
+  color: var(--cul-p);
+  margin-top: 35%;
+  text-shadow: 0 0 4px black;
+}
+
+/* contact */
+
+#contact {
+  background-image: url('../../assets/img/map-image.png');
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+#contact .contact-date {
+  padding-top: 30px;
+  align-items: center;
+}
+
+#contact .contact-date-chenar {
+  /*margin-right: 20%;*/
+  width: 250px;
+  background-color: rgba(0,0,0,0.5);
+  padding: 2%;
+  margin: 0 auto;
+}
+
+#contact li {
+  padding: 0.7em;
+}
+
+#contact a {
+  color: white;
+  text-decoration: none;
+  border-style: none;
+  border-color: var(--cul-p);
+  font-family: sans-serif;
+  font-weight: initial;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+#contact a:hover {
+  color: var(--cul-p);
+}
+
+#contact i {
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+/* footer */
+
+footer {
+  background: linear-gradient(55deg, #fff 0%, #eee 51%, #ddd 85%);
+}
+
+footer a {
+  color: black;
+  /*text-decoration: none;*/
+  letter-spacing: .2rem;
+}
+
+footer a:hover {
+  color: var(--cul-p);
+  background-color: rgba(0,0,0,0.1);
+}
+
+#butonfix {
+  border-color: white;
+}
+
+/* partea fixa */
+
+@media (min-width: 750px) {
+  .container.fixed-bottom.foot-fix {
+    margin-left: 85%;
+  }
+}
+
+@media (max-width: 750px) {
+  .container.fixed-bottom.foot-fix {
+    margin-left: 70%;
+  }
+}
+
+@media (min-width: 550px) and (max-width:750px) {
+  .container.fixed-bottom.foot-fix {
+    margin-left: 80%;
+  }
+}
+
+.container.fixed-bottom.foot-fix {
+  padding-bottom: 20px;
+  /*margin-left: 70%;*/
+  margin-right: auto;
+  width: 100px;
+}
+
+footer .fa.fa-whatsapp {
+  font-size: 30px;
+  color: white;
+}
+
+footer .btn-circle {
+  background-color: rgba(0,0,0,0.7);
+  height: 60px;
+  width: 60px;
+}
+
+#contact p {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+/* modal */
+
+#buton {
+  color: var(--cul-p);
+  border-radius: 20px;
+  background: transparent;
+  border: 3px solid var(--cul-p) ;
+  height: 40px;
+  width: auto;
+  padding-top: 4px;
+  padding-bottom: 5px;
+}
+
+#GDPR {
+  opacity: 1;
+}
+
+.btn-primary {
+  color: var(--cul-p);
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: var(--cul-p) !important;
+  border-color: var(--cul-p) !important;
+  color: white !important;
+}
+
+/* FAQ */
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(230,67,53,0.7);
+}
+
+#articole .titlu {
+  margin-bottom: 40px;
+  color: white;
+}
+
+.flex-item {
+  height: 300px;
+}
+
+#butonfix {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+}
+
+#cefac .titlu {
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 5em;
+}
+
+#mainNav {
+  text-align: right;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+/* news */
+
+#news {
+  /*background: linear-gradient(55deg, #fff 0%, #eee 51%, #ddd 85%);*/
+}
+
+/* daca nu pun overflow, textul iese din height */
+
+#news .fb-post {
+  background: linear-gradient(55deg, #fff 0%, #eee 51%, #ddd 85%);
+  width: 100%;
+  margin: 10px auto;
+  height: 350px;
+  overflow: scroll;
+}
+
+#news h2 {
+  color: white;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.bg-dark {
+  background-color: var(--bgcolor) !important;
+}
+
