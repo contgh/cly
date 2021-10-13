@@ -15,6 +15,17 @@ body {
   background-color: var(--bgcolor);
 }
 
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: var(--cul-p);
+}
+
 h2 {
   font-family: 'SFRounded', helvetica, sans-serif;
 }
@@ -106,22 +117,6 @@ header .btn-circle {
   font-size: 45px;
 }
 
-#btnfix {
-  padding-right: 11px;
-  color: var(--cul-p);
-  border-color: white;
-  background: rgba(0,0,0,0.3);
-  height: 70px;
-  width: 70px;
-  font-size: 35px;
-}
-
-#btnfix:hover {
-  color: white;
-  border-color: white;
-  background: rgba(230,67,53,0.7);
-}
-
 header.masthead {
   text-align: center;
   color: white;
@@ -162,12 +157,36 @@ header h3 {
   padding-bottom: 20px;
 }
 
-#services .cul-ico {
+.cul-ico {
   color: var(--cul-p);
 }
 
 #services .serv-item:hover .text-muted {
   color: rgb(80,80,80) !important;
+}
+
+/* ASF */
+
+#asf h6 {
+  text-align: left;
+  font-family: SFRounded, sans-serif;
+}
+
+#asf {
+  /*background: linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%);*/
+  background: linear-gradient(55deg, #fff 0%, #eee 51%, #ddd 85%);
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+#asf .serv-item {
+  display: inline-block;
+  text-align: left;
+}
+
+#asf iframe {
+  min-width: 100%;
+  height: 75vh;
 }
 
 /* despre */
@@ -186,6 +205,7 @@ header h3 {
 
 .timeline > li .timeline-image {
   background: url("../../assets/img/cl-nav.svg") center / auto no-repeat, var(--bgcolor);
+  /*background: url("../../assets/img/logo-claym.svg") center / auto no-repeat, var(--bgcolor);*/
 }
 
 /* contact */
@@ -255,50 +275,13 @@ footer a:hover {
   background-color: rgba(0,0,0,0.1);
 }
 
-/* partea fixa */
-
-@media (min-width: 750px) {
-  .container.fixed-bottom.foot-fix {
-    margin-left: 85%;
-  }
-}
-
-@media (max-width: 750px) {
-  .container.fixed-bottom.foot-fix {
-    margin-left: 70%;
-  }
-}
-
-@media (min-width: 550px) and (max-width:750px) {
-  .container.fixed-bottom.foot-fix {
-    margin-left: 80%;
-  }
-}
-
-.container.fixed-bottom.foot-fix {
-  padding-bottom: 20px;
-  margin-right: auto;
-  width: 100px;
-}
-
-footer .fa.fa-whatsapp {
-  font-size: 30px;
-  color: white;
-}
-
-footer .btn-circle {
-  background-color: rgba(0,0,0,0.7);
-  height: 60px;
-  width: 60px;
-}
-
 /* modal */
 
 .modal-dialog {
   background: linear-gradient(55deg, #fff 0%, #eee 51%, #ddd 85%);
 }
 
-#buton {
+.mod-buton {
   color: var(--cul-p);
   border-radius: 20px;
   background: transparent;
@@ -330,26 +313,6 @@ footer .btn-circle {
 }
 
 /* daca nu pun overflow, textul iese din height */
-
-.sidenav {
-  /*color: var(--cul-p);*/
-  border-radius: 20px;
-  background: transparent;
-  transition: 0.3s linear;
-  width: 70px;
-  height: 70px;
-  position: fixed;
-  z-index: 1;
-  bottom: 1.5vh;
-  right: 2vw;
-  overflow-x: hidden;
-}
-
-@media (min-width: 2000px) {
-  .sidenav {
-    right: 20vw;
-  }
-}
 
 /* animatii */
 
